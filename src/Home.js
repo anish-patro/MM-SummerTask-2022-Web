@@ -1,12 +1,20 @@
-
+import {TextField,Button} from '@mui/material';
 import {Grid,Card,CardActionArea,CardMedia,CardContent,Typography} from '@mui/material';
 import * as React from 'react';
-
-
+import SearchIcon from "@mui/icons-material/Search";
+import CardActions from '@mui/material/CardActions';
 
 const Home=()=> {
   return (<>
-   
+  
+   <TextField
+    sx={{marginLeft:"auto"}}
+    id="standard-basic"
+    className="SearchBox"
+    icon={<SearchIcon/>}
+    label="Search..."
+    variant="standard"
+  />
     <div>
       <Grid container spacing={0.5} marginTop={1}>
         <Grid item xs={3} md={2.4}>
@@ -27,6 +35,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -48,6 +59,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -69,6 +83,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -90,6 +107,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -111,6 +131,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -132,6 +155,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -153,6 +179,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -174,6 +203,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -195,6 +227,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
@@ -216,6 +251,9 @@ const Home=()=> {
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
