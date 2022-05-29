@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import FilterListIcon from '@mui/icons-material/FilterList';
+import {Link} from "react-router-dom";
 
 const options = [
   'Academics','Sports','Campus','Placements'
@@ -87,7 +88,9 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
@@ -111,7 +114,9 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
@@ -135,7 +140,9 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
@@ -159,7 +166,9 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
@@ -183,7 +192,9 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
@@ -207,7 +218,9 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
@@ -231,7 +244,9 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
@@ -255,36 +270,14 @@ const Home=()=> {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small">Learn More</Button>
+        <Link to="/Article" >
+         <Button size="small">Learn More</Button>
+        </Link>
       </CardActions>
       </CardActionArea>
     </Card>
         </Grid>
-        <Grid item xs={3} md={2.4}>
-        <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-        <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-      </CardActionArea>
-    </Card>
-        </Grid>
-
+        
         
       </Grid>
     </div>
