@@ -18,9 +18,6 @@
   min-height: 100vh;
 
 }
-
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -43,4 +40,143 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.LoginButton{
+  margin-left: 36%;
+  margin-top: 5%;
+
+}
+.createbut{
+  margin-left: 22%;
+  margin-top: 5%;
+}
+.text-center{
+  margin-top: 1%;
+}
+.Loginpage{
+  margin: 7%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  border: 2px solid gray;
+  width: 62vw;
+  height: 55vh;
+  margin-left: 20%;
+  border-radius: 10px;
+  background-color: rgb(245, 242, 242);
+  padding-top: 3%;
+}
+.Signup{
+  margin: 2%;
+}
+.name{
+  padding: 2%;
+}
+.Firstname{
+  margin: 10px;
+}
+.Lastname{
+  margin: 10px;
+}
+.Login_credentials{
+  padding: 10px;
+}
+.Email{
+  margin: 10px;
+}
+.Password{
+  margin: 10px;
+}
+.SignupPassword{
+  margin: 10px;
+}
+.SignupEmail{
+  margin: 10px;
+}
+.main-footer{
+  color: white;
+  background-color: black;
+  padding-top:  3vh;
+  margin-top: 20%;
+  position: relative;
+  margin-bottom: 0%;
+  width: 100%;
+}
+.list-unstyled{
+  display:inline-block;
+}
+
+.list-unstyled1{
+  margin-left: 10px;
+}
+.list-unstyled2{
+  text-align: center;
+  margin-top: 1vh;
+  
+}
+.list-unstyled2 ul li{
+ 
+  padding: 2vw;
+  display: inline;
+}
+.admin{
+  margin: 20px;  
+  padding: 20px;
+  justify-content: center;
+  box-shadow:0 6px 20px 0 rgba(0,0,0,0.19) ;
+
+}
+.icon{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10px;
+
+}
+.text{
+font-weight: bold;
+
+  color: aqua;
+  font-size: 40px;
+
+}
+.icon_class>.MuiSvgIcon-root{
+    color: aquamarine;
+}
+.signup{
+  padding: 10px;
+  margin: 2px;
+}
+.login{
+  padding: 0px;
+  margin: 0px;
+}
+.form{
+  display: flexbox;
+}
+.Signup{
+  display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    border: 2px solid gray;
+    width: 62vw;
+    margin-left: 20%;
+    border-radius: 20px;
+    background-color: rgb(245, 242, 242);
+    padding-bottom: 25px;
+    padding-top: 15px;
+    
+}
+.Checkbox{
+  padding: 20px;
+  display: inline;
+}
+.text-center{
+  margin-top: 30px;
 }

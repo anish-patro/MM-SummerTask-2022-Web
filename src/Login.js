@@ -1,17 +1,19 @@
 import React from "react";
-import './Admin.css';
+
 import { Divider, TextField,Button } from "@mui/material";
 import {Link} from "react-router-dom";
-
+import './App.css';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
-import PersonIcon from '@mui/icons-material/PersonAdd';
+import PersonIcon from '@mui/icons-material/Person';
+
 const Login=()=>
 {
   return(
-   <div>
+      <>
+   <div className="Loginpage">
        <div className="icon">
            <div className="icon_class">
            <PersonIcon fontSize="large"/>
@@ -20,20 +22,22 @@ const Login=()=>
                </div>
           
            <div className="row m-2">
-           <TextField id="email" className="p-2" type="text" variant="outlined" label="Enter your email" fullWidth/>  
-           <TextField id="Password"  className="p-2" type="text" variant="outlined" label="Enter password" fullWidth/> 
+           <div className="Email"><TextField id="email" className="email" type="text" variant="outlined" label="Enter your email" fullWidth/> </div> 
+           <div className="Password"><TextField id="Password"  className="password" type="password" variant="outlined" label="Enter password" fullWidth/> </div>
            <FormControlLabel control={<Checkbox icon={<CheckBoxOutlineBlankIcon fontSize="small"/>} checkedIcon={<CheckBoxIcon fontSize="small"/>} name="checkedI"/>}
            label="Remember me"/>
-           <Button variant="contained" color="primary">Create Account</Button>
+           <div className="LoginButton"><Button className="createacc" variant="contained" color="primary">Log in</Button></div>
            </div>
            <Divider variant="middle"/>
            <p className="text-center">
+                Don't have an account? 
                <Link to="/Signup" className="text-black-50">
-                   Create account
+                     Create account
                </Link>
+
            </p>
        </div>
-   </div>
+   </div></>
   )  
 }
 export default Login;

@@ -1,7 +1,8 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import "./Footer.css" ;
+
+import './App.css';
 const Footer=()=>{
     return(
      <div className="main-footer" >

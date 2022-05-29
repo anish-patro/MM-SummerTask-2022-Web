@@ -3,7 +3,7 @@ import {Grid,Card,CardActionArea,CardMedia,CardContent,Typography} from '@mui/ma
 import * as React from 'react';
 import SearchIcon from "@mui/icons-material/Search";
 import CardActions from '@mui/material/CardActions';
-
+import './App.css';
 const Home=()=> {
   return (<>
   
