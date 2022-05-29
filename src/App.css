@@ -225,3 +225,44 @@ font-weight: bold;
     padding-bottom: 25px;
     padding-top: 15px;
 }
+.Article{
+  display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    border: 2px solid gray;
+    width: 62vw;
+    margin-left: 20%;
+    border-radius: 20px;
+    background-color: rgb(234, 226, 226);
+    padding-bottom: 25px;
+    padding-top: 15px;
+    height: 70vh;
+    display: inline;
+
+}
+.Article1_h1{
+  margin-top: 20px;
+ margin-left: 42%;
+ 
+}
+.Article_p1{
+ margin-top: 20px;
+ margin-left: 20%;
+
+ display: flex;
+justify-content: center;
+border: 2px solid gray;
+width: 40vw;
+border-radius: 2px;
+}
+.ArticleHR{
+  margin-left: 10%;margin-right:10%;height: 3px;background-color:#666; opacity: 1.5;
+}
+.view_like{
+  display: inline-block;
+  margin-left: 73%;
+  margin-top: 2%;
+  padding: 10px;
+}
+
+
