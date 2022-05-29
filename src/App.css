@@ -213,3 +213,15 @@ font-weight: bold;
   display: inline;
   white-space: nowrap;
 }
+.main_div{
+  display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    border: 2px solid gray;
+    width: 62vw;
+    margin-left: 20%;
+    border-radius: 20px;
+    background-color: rgb(234, 226, 226);
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
