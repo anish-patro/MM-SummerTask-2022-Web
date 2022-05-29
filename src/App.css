@@ -63,13 +63,13 @@
   margin: 7%;
   display: flex;
   justify-content: center;
-  margin-top: 6%;
+  margin-top: 4%;
   border: 2px solid gray;
   width: 62vw;
   height: 55vh;
   margin-left: 20%;
   border-radius: 10px;
-  background-color: rgb(245, 242, 242);
+  background-color: rgb(234, 226, 226);
   padding-top: 3%;
 }
 .Signup{
@@ -125,13 +125,13 @@
   padding: 2vw;
   display: inline;
 }
-.admin{
+/* .admin{
   margin: 20px;  
   padding: 20px;
   justify-content: center;
   box-shadow:0 6px 20px 0 rgba(0,0,0,0.19) ;
 
-}
+} */
 .icon{
    display: flex; 
    flex-direction: column;
@@ -141,13 +141,12 @@
 }
 .text{
 font-weight: bold;
-
-  color: aqua;
+  color: rgb(255, 162, 0);
   font-size: 40px;
 
 }
 .icon_class>.MuiSvgIcon-root{
-    color: aquamarine;
+    color: rgb(135, 207, 63);
 }
 .signup{
   padding: 10px;
@@ -168,7 +167,7 @@ font-weight: bold;
     width: 62vw;
     margin-left: 20%;
     border-radius: 20px;
-    background-color: rgb(245, 242, 242);
+    background-color: rgb(234, 226, 226);
     padding-bottom: 25px;
     padding-top: 15px;
     
@@ -183,4 +182,34 @@ font-weight: bold;
 .TrendingSection{
   margin-top: 6%;
   margin-left: 0.3%;
+}
+.Filters{
+  margin-left: 72%;
+  margin-top: 10px;
+}
+.Searchbox{
+  margin-left: 72%;
+}
+.AllCards{
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+.TrendingSection{
+  margin-left: 15%;
+}
+.TrendingCards{
+  margin-left: 15%;
+}
+.Content{
+  /* background-position: center;
+  background-image: cover; */
+  background-image: url(./background_image.webp)
+}
+.HR{
+  margin-left: auto;margin-right:17.8%;height: 3px;background-color:#666; opacity: 1.5;
+}
+.TrendingSection{
+  display: inline;
+  white-space: nowrap;
 }

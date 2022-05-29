@@ -19,7 +19,7 @@ export default function ColorTabs() {
 
   return (  
     <> 
-    <Box sx={{  background:'yellow' }}>      
+    <Box sx={{  background:' rgb(160, 190, 190)' }}>      
       <Tabs
         value={value}
         onChange={handleChange}
@@ -28,8 +28,8 @@ export default function ColorTabs() {
         aria-label="secondary tabs example"
       >
         <img src={logo} className="logo" alt="logo" />
-        <Tab value="one" label="Home" icon={<HomeIcon/>}  component={Link} to="/Home" />        
-        <Tab sx={{marginLeft:"auto"}} value="three" label="Login" icon={<PersonIcon/>} component={Link} to="/Login"/>
+        <Tab sx={{marginLeft:"5%"}} value="one" label="Home" icon={<HomeIcon/>}  component={Link} to="/Home" />        
+        <Tab sx={{marginLeft:"60%"}} value="three" label="Login" icon={<PersonIcon/>} component={Link} to="/Login"/>
         <Tab value="four" label="Signup" icon={<PersonAddIcon/>}  component={Link} to="/Signup" />       
       </Tabs>      
     </Box>
