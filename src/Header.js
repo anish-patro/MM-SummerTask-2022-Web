@@ -4,7 +4,6 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import logo from "./article_logo.png";
 import {Link} from "react-router-dom";
-import "./Header.css";
 import './App.css';
 import HomeIcon from "@mui/icons-material/Home";
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';

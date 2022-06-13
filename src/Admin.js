@@ -1,41 +1,58 @@
+import * as React from 'react';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import './App.css';
+import { Button } from '@mui/material';
+function createData(name, date) {
+  return { name, date };
+}
 
-import React from "react";
-import Button from '@mui/material/Button';
-import AddCircleOutlineRoundedIcon from '@mui/icons-material/AddCircleOutlineRounded';
-import TextField from '@mui/material/TextField';
-import ListCom from "./ListCom";
-import { useState } from "react";
- const Admin=()=>{
-     const[item,setItem]=useState("");
-     const[newitem,setNewItem]=useState([]);
-     const itemEvent=(event)=>{
-         setItem(event.target.value);
-     };
-     const listOfItems=()=>{
-         setNewItem((prevValue)=>{
-             return[...prevValue,item];
-         });
-         setItem("");
-     };
-   return(
-   <>
-    <div className="main_div">
-      <div className="center_div">
-          <br />
-          <h1>Your Articles</h1> <br />
-          <TextField id="standard-basic" placeholder="Add to your list" value={item} onChange={itemEvent} variant="standard" />
-          <Button className="newBtn" onClick={listOfItems}>< AddCircleOutlineRoundedIcon/></Button>
-          <br />
-          <ol>
-              {newitem.map((val,index)=>{
-                  return <ListCom key={index} text={val}/>;
-              })}
+const rows = [
+  createData('MM', "28-06-2022"),
+  createData('MM',"28-06-2022" ),
+  createData('MM', "28-06-2022"),
+];
 
-              </ol><br /></div>  
+export default function AcccessibleTable() {
+  return (
+    <>
+    <div className="Admin">
+    <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="caption table">
+        
+        <TableHead>
+          <TableRow>
+            <TableCell>Articles</TableCell>
+            <TableCell align="right">Date of publish</TableCell>
+            <TableCell align="right">Update post</TableCell>
+            <TableCell align="right">Delete post</TableCell>
+           
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow key={row.name}>
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.date}</TableCell>
+              <TableCell align='right'>
+                <Button variant='contained'>update</Button> </TableCell>
+                <TableCell align="right"> <Button variant='contained'>Delete</Button>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+    
     </div>
-
-
-   </>
-   )
- }
- export default Admin;
+    <div className="Addpost">
+    <Button variant='contained'>Post</Button> </div></>
+  );
+}

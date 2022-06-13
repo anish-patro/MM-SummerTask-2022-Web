@@ -41,6 +41,10 @@
     transform: rotate(360deg);
   }
 }
+.logo{
+  width: 65px;
+}
+
 .Content{
   display: flex;
   flex-direction: column;
@@ -265,4 +269,17 @@ border-radius: 2px;
   padding: 10px;
 }
 
-
+.Admin{
+  display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border: 2px solid gray;
+    width: 62vw;
+    margin-left: 20%;
+    border-radius: 0px;
+    padding-top: 0px;
+}
+.Addpost{
+  margin-top: 33px;
+  margin-left: 41vh;
+}
