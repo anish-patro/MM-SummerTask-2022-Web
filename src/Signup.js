@@ -1,4 +1,5 @@
 import React from "react";
+import {useState,useEffect,useHistory} from 'react';
 
 import { Divider, TextField,Button, Checkbox } from "@mui/material";
 import {Link} from "react-router-dom";
@@ -10,6 +11,12 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import './App.css';
 const Signup=()=>
 {
+
+    //    const history = useHistory();
+    //    const [fname,setFname]= useState("");
+    //    const [lname,setLname]= useState("");
+    //    const [email,setEmail]= useState("");
+
   return(
    <div className="Signup">
        <div className="icon">
@@ -20,14 +27,20 @@ const Signup=()=>
                </div>
            <div className="name">
                <div className="Firstname">
-                   <TextField id="firstname" type="text" variant="outlined" label="Enter first name" fullWidth/>
+                   <TextField id="firstname" type="text" variant="outlined" placeholder="Enter first name" 
+                    // value={fname} onChange={(e)=>setFname(e.target.value)} 
+                    fullWidth/>
                </div>
                <div className="Lastname">
-               <TextField id="lastname" type="text" variant="outlined" label="Enter last name" fullWidth/>
+               <TextField id="lastname" type="text" variant="outlined" placeholder="Enter last name" 
+                    // value={lname} onChange={(e)=>setLname(e.target.value)} 
+                     fullWidth/>
                </div>
            
            <div className="Login_credentials">
-             <div className="SignupEmail"><TextField id="email" className="p-2" type="text" variant="outlined" label="Enter your email" fullWidth/> </div> 
+             <div className="SignupEmail"><TextField id="email" className="p-2" type="text" variant="outlined" placeholder="Enter your email-id" 
+            //   value={email} onChange={(e)=>setEmail(e.target.value)} 
+             fullWidth/> </div> 
                <div className="SignupPassword">
 
              <TextField id="Password" className="p-2"  type="password" variant="outlined" label="Enter password" fullWidth/> </div></div>

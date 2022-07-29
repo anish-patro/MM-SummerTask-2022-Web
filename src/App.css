@@ -45,6 +45,10 @@
   width: 65px;
 }
 
+.header{
+/* position: fixed; */
+}
+
 .Content{
   display: flex;
   flex-direction: column;
@@ -192,11 +196,16 @@ font-weight: bold;
   margin-top: 10px;
 }
 .Searchbox{
+  /* top: 13vh; */
   margin-left: 72%;
+  /* position: fixed;
+  overflow-y: hidden; */
+  
 }
 .AllCards{
   margin-left: 15%;
   margin-right: 15%;
+  position: static;
   
 }
 .TrendingSection{

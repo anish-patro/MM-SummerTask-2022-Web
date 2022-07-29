@@ -12,17 +12,17 @@ import PersonIcon from '@mui/icons-material/Person';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
 export default function ColorTabs() {
-  const [value, setValue] = React.useState('one');
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // const [value, setValue] = React.useState('one');
+  // const handleChange = (event, newValue) => {
+  //   setValue(newValue);
+  // };
 
   return (  
-    <> 
+    <> <div className="header">
     <Box sx={{  background:' rgb(160, 190, 190)' }}>      
       <Tabs
-        value={value}
-        onChange={handleChange}
+        // value={value}
+        // onChange={handleChange}
         textColor="secondary"
         indicatorColor="secondary"
         aria-label="secondary tabs example"
@@ -34,7 +34,7 @@ export default function ColorTabs() {
         <Tab sx={{marginLeft:"50%"}} value="four" label="Login" icon={<PersonIcon/>} component={Link} to="/Login"/>
         <Tab value="five" label="Signup" icon={<PersonAddIcon/>}  component={Link} to="/Signup" />       
       </Tabs>      
-    </Box>
+    </Box></div>
     
   </>
   );
