@@ -1,9 +1,6 @@
 import React from "react"
 import NewsTemp from "./NewsTemp"
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import Top from "./Top";
-// import "../Styles/Main.css";
 import data from "./data.js"
 import Cat from "./Cat.js"
 
